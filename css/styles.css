@@ -115,8 +115,12 @@ nav a:hover {
 }
 
 #about .about-image img {
-    max-width: 400px;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    size-adjust: contain;
 }
+
 
 /* Sections */
 section {
@@ -170,17 +174,6 @@ h2 {
     font-size: 48px;
     margin-bottom: 10px;
     color: #00aaff;
-}
-
-/* Projects Section */
-#about .about-content {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-#about .about-image img {
-    max-width: 400px;
 }
 
 /* Projects Section */
