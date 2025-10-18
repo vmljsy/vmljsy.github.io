@@ -2,8 +2,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #eee;
+    background-color: #121212;
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
 
 /* Header */
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@ nav {
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #eee;
     text-decoration: none;
 }
 
@@ -47,13 +47,13 @@ nav {
 }
 
 .nav-links a {
-    color: #333;
+    color: #eee;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #AF3D4E;
+    color: #bb86fc;
 }
 
 /* Sections */
@@ -62,7 +62,7 @@ section {
 }
 
 #about {
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
     text-align: center;
 }
 
@@ -73,19 +73,19 @@ section {
 
 #about h2 {
     font-size: 24px;
-    color: #777;
+    color: #bbb;
     margin-bottom: 20px;
 }
 
 .social-links a {
     font-size: 24px;
-    color: #333;
+    color: #eee;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #AF3D4E;
+    color: #bb86fc;
 }
 
 /* Experience */
@@ -100,11 +100,11 @@ section {
 
 .job .company {
     font-weight: bold;
-    color: #777;
+    color: #bbb;
 }
 
 .job .date {
-    color: #777;
+    color: #bbb;
 }
 
 /* Projects */
@@ -119,14 +119,14 @@ section {
 
 /* Contact */
 #contact {
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
     text-align: center;
 }
 
 .btn {
     display: inline-block;
-    background-color: #AF3D4E;
-    color: #fff;
+    background-color: #bb86fc;
+    color: #121212;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -134,13 +134,13 @@ section {
 }
 
 .btn:hover {
-    background-color: #8e2e3a;
+    background-color: #a362f7;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1f1f1f;
+    color: #eee;
     text-align: center;
     padding: 20px 0;
 }
