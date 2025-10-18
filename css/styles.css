@@ -1,81 +1,146 @@
-/* Typography */
-
-html {
-	font-family: 'Roboto', sans-serif;
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
-@media (min-width: 576px) {
-	html {
-		font-size: 14px;
-	}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-@media (min-width: 768px) {
-	html {
-		font-size: 16px;
-	}
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-@media (min-width: 992px) {
-	html {
-		font-size: 18px;
-	}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-@media (min-width: 1200px) {
-	html {
-		font-size: 20px;
-	}
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
 }
 
-.icons-social i {
-	font-size: 3em;
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-/* Custom Styles */
-
-main {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: center;
-	padding: 0 30px;
-	text-align: center;
+.nav-links li {
+    margin-left: 20px;
 }
 
-main > .intro {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-main > .tagline {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
-	font-weight: 100;
+.nav-links a:hover {
+    color: #AF3D4E;
 }
 
-main > .links {
-	color: #AF3D4E;
-}
-	.links:visited {
-  	color: #AF3D4E;
-}
-	.links:hover, a:active, a:focus {
-  	color:#ff2949;
+/* Sections */
+section {
+    padding: 80px 0;
 }
 
-.icons-social i {
-	padding: 10px;
+#about {
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.devto {
-	margin-bottom: -0.20rem;
+#about h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.devto svg {
-	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
-	width: 2.65rem;
-	height: 2.65rem;
+#about h2 {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #AF3D4E;
+}
+
+/* Experience */
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.job .company {
+    font-weight: bold;
+    color: #777;
+}
+
+.job .date {
+    color: #777;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Contact */
+#contact {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #AF3D4E;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8e2e3a;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
