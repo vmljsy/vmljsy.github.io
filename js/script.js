@@ -1,54 +1,39 @@
+// Simplified JS: no animations. Keep minimal behavior.
 document.addEventListener('DOMContentLoaded', () => {
-    // Custom cursor
-    const cursor = document.querySelector('.cursor');
+    // Theme toggle: follow system preference and persist user choice
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const stored = localStorage.getItem('theme');
 
-    document.addEventListener('mousemove', e => {
-        cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
-    });
+    function applyTheme(theme){
+        if(theme === 'light'){
+            root.classList.add('light');
+            toggle.innerHTML = '<i class="fas fa-sun"></i>';
+            toggle.setAttribute('aria-pressed','true');
+        } else {
+            root.classList.remove('light');
+            toggle.innerHTML = '<i class="fas fa-moon"></i>';
+            toggle.setAttribute('aria-pressed','false');
+        }
+    }
 
-    // Floating icons
-    const floatingIcons = document.querySelectorAll('.floating-icons i');
+    // Determine initial theme: stored -> system -> dark default
+    if(stored === 'light' || stored === 'dark'){
+        applyTheme(stored);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+        applyTheme('light');
+    } else {
+        applyTheme('dark');
+    }
 
-    floatingIcons.forEach(icon => {
-        icon.style.top = `${Math.random() * 100}%`;
-        icon.style.left = `${Math.random() * 100}%`;
-        icon.style.animationDelay = `${Math.random() * 10}s`;
-    });
-
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('nav a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-            const href = link.getAttribute('href');
-            if (href.startsWith('#')) {
-                e.preventDefault();
-
-                const targetId = href.substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            }
+    if(toggle){
+        toggle.addEventListener('click', ()=>{
+            const isLight = root.classList.contains('light');
+            const next = isLight ? 'dark' : 'light';
+            localStorage.setItem('theme', next);
+            applyTheme(next);
         });
-    });
+    }
 
-    // Scroll animations
-    const sections = document.querySelectorAll('section');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+    // Keep nav anchors native; minimal JS otherwise.
 });

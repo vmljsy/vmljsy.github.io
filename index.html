@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="cursor"></div>
+    <!-- simplified layout: removed animated cursor -->
 
     <div class="container">
         <header>
@@ -21,33 +21,51 @@
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </nav>
+                <button id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
         </header>
 
         <main>
             <section id="hero">
-                <div class="floating-icons">
-                    <i class="fas fa-brain"></i>
-                    <i class="fas fa-database"></i>
-                    <i class="fas fa-robot"></i>
-                    <i class="fas fa-chart-line"></i>
-                    <i class="fab fa-python"></i>
-                    <i class="fas fa-cogs"></i>
-                </div>
                 <div class="hero-content">
                     <h1>Vimal Joshy</h1>
                     <h2>Data Science | Innovator | Engineer</h2>
                 </div>
+                <hr class="section-accent">
             </section>
 
             <section id="about">
                 <div class="about-content">
                     <div class="about-text">
-                        <h2>About Me</h2>
-                        <p>A production engineering graduate and now a data scientist at IQVIA. As a Data Scientist working on Patient Analytics, I've delved into the world of data, extracting valuable insights and driving informed decisions. My passion lies in developing innovative solutions . Proficient in Python programming, I've contributed to projects that enhance efficiency and reduce costs. Whether it's analyzing complex datasets or designing elegant solutions, I thrive on challenges.</p>
+                        <h2>About / Resume</h2>
+                        <p><strong>Summary:</strong> Production Engineering graduate and Data Scientist at IQVIA focused on patient analytics. Experienced building data products, automation tools, and ML models to drive decision-making and operational efficiency.</p>
+                        <p><strong>Key Skills:</strong> Python, pandas, NumPy, scikit-learn, SQL, data engineering, model evaluation, data visualization (Matplotlib/Seaborn), Git, automation.</p>
+                        <p><strong>Work Highlights:</strong></p>
+                        <ul>
+                            <li>Developed a Patient Cohort Creator (hackathon winner) for clustering patients using LRX data and ML approaches.</li>
+                            <li>Built automation tools including a QC tool that reduced QC time by 95% (~100 hours saved monthly) and <em>SlideSync</em> which cut slide creation time by ~80%.</li>
+                            <li>Spearheaded generative AI initiatives, creating models to identify patient indications and support analytics for multiple client projects.</li>
+                        </ul>
+                        <p><strong>Education:</strong> B.Tech / Production Engineering (details available on request)</p>
                     </div>
-                    <div class="about-image">
-                        <img src="images/Profile_photo.jpg" alt="About Me Illustration">
-                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2><i class="fas fa-tools"></i> Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">pandas</div>
+                    <div class="skill-card">NumPy</div>
+                    <div class="skill-card">scikit-learn</div>
+                    <div class="skill-card">SQL</div>
+                    <div class="skill-card">Data Visualization</div>
+                    <div class="skill-card">Machine Learning</div>
+                    <div class="skill-card">Automation</div>
+                    <div class="skill-card">Git</div>
+                    <div class="skill-card">Docker</div>
+                    <div class="skill-card">Jupyter</div>
                 </div>
             </section>
 
@@ -98,28 +116,22 @@
                 <h2><i class="fas fa-briefcase"></i> Experience</h2>
                 <div class="experience-timeline">
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Data Scientist</h3>
-                            <p>IQVIA</p>
-                            <p>January 2024 - Present</p>
+                            <div class="meta">IQVIA — January 2024 - Present</div>
                             <p>Working with patient data to gain valuable insights on the medical purchases for various stakeholders. Working on innovation platforms to develop tools and processes to increase efficiency and better insights.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Design Engineer</h3>
-                            <p>MEDGYOR Pvt Ltd.</p>
-                            <p>September 2023 - December 2023</p>
+                            <div class="meta">MEDGYOR Pvt Ltd. — Sep 2023 - Dec 2023</div>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Engineering Intern</h3>
-                            <p>MEDGYOR Pvt Ltd.</p>
-                            <p>March 2022 - September 2023</p>
+                            <div class="meta">MEDGYOR Pvt Ltd. — Mar 2022 - Sep 2023</div>
                         </div>
                     </div>
                 </div>
