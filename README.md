@@ -7,7 +7,7 @@ Built with a clean **shadcn/ui-inspired** aesthetic, featuring a sleek zinc pale
 ## Highlights
 - **Design System**: shadcn/ui-inspired design tokens, zinc slate palette, glassmorphism header, and modern card components.
 - **Theme Modes**: Native dark and light mode support with automatic system preference detection and local storage persistence.
-- **Projects Showcase**: Interactive tab filtering (`All`, `AI & Machine Learning`, `Automation & Tools`) highlighting real-world patient analytics and automation tools.
+- **Projects Showcase**: Interactive tab filtering (`All`, `AI & Machine Learning`, `Automation & Tools`) highlighting [Data Science Playground](https://vmljsy.github.io/ds-playground/), real-world patient analytics, and automation tools.
 - **Direct Resume Access**: Downloadable PDF resume (`resume.pdf`).
 - **Interactive Features**: 1-click clipboard email copy with custom shadcn-style toast notification.
 
