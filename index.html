@@ -30,8 +30,8 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Stylesheet with cache-busting -->
+    <link rel="stylesheet" href="css/styles.css?v=20261109c">
 </head>
 <body>
 
@@ -355,8 +355,11 @@
                                     <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/vmljsy/ds-playground" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                                    <i class="fab fa-github"></i> Source Code
+                                    <i class="fab fa-github"></i> Code
                                 </a>
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="ds-playground">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </button>
                             </div>
                         </div>
 
@@ -388,13 +391,13 @@
                                 <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                                     <i class="fab fa-github"></i> Source Code
                                 </a>
-                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="cohort-creator">
                                     <i class="fas fa-circle-info"></i> Details
-                                </a>
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Project 2: Generative AI Indication Identifier -->
+                        <!-- Project 3: Generative AI Indication Identifier -->
                         <div class="card project-card" data-category="ml">
                             <div class="project-preview">
                                 <img src="images/undraw_artificial-intelligence_43qa.svg" alt="Generative AI Project preview">
@@ -423,13 +426,13 @@
                                 <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                                     <i class="fab fa-github"></i> Source Code
                                 </a>
-                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="genai-indication">
                                     <i class="fas fa-circle-info"></i> Details
-                                </a>
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Project 3: QC Automation Engine -->
+                        <!-- Project 4: QC Automation Engine -->
                         <div class="card project-card" data-category="automation">
                             <div class="project-preview">
                                 <img src="images/undraw_data-analysis_b7cp.svg" alt="QC Tool preview">
@@ -457,13 +460,13 @@
                                 <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                                     <i class="fab fa-github"></i> Source Code
                                 </a>
-                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="qc-engine">
                                     <i class="fas fa-circle-info"></i> Details
-                                </a>
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Project 4: SlideSync Automation -->
+                        <!-- Project 5: SlideSync Automation -->
                         <div class="card project-card" data-category="automation">
                             <div class="project-preview">
                                 <img src="images/undraw_ai-answers_uxgx.svg" alt="SlideSync preview">
@@ -491,9 +494,9 @@
                                 <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                                     <i class="fab fa-github"></i> Source Code
                                 </a>
-                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="slidesync">
                                     <i class="fas fa-circle-info"></i> Details
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -827,7 +830,31 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <!-- Project Details Modal (shadcn Dialog) -->
+    <div id="project-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <h3 id="modal-project-title" class="modal-title">Project Details</h3>
+                    <span id="modal-project-badge" class="badge badge-default">Details</span>
+                </div>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modal-project-body" class="modal-body">
+                <!-- Dynamically populated via JS -->
+            </div>
+            <div class="modal-footer">
+                <a id="modal-project-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <i class="fab fa-github"></i> <span id="modal-project-link-text">Source Code</span>
+                </a>
+                <button id="modal-close-footer" class="btn btn-primary btn-sm">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts with cache-busting -->
+    <script src="js/script.js?v=20261109c"></script>
 </body>
 </html>
