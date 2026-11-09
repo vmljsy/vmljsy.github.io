@@ -260,6 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       } else if (action === 'toggle-theme') {
         if (themeToggle) themeToggle.click();
+      } else if (action === 'modal') {
+        const modalId = item.getAttribute('data-modal');
+        if (modalId) openProjectModal(modalId);
       } else if (action === 'link') {
         const url = item.getAttribute('data-url');
         if (url) window.open(url, '_blank');
@@ -339,6 +342,52 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="tech-tag">pandas</span>
             <span class="tech-tag">Unsupervised ML</span>
             <span class="tech-tag">LRX Data</span>
+          </div>
+        </div>
+      `
+    },
+    'flu-forecaster': {
+      title: 'Flu Season Drug Sales Forecaster (Spain)',
+      badge: 'Hackathon Runner-Up',
+      badgeClass: 'badge-default',
+      link: 'https://github.com/vmljsy',
+      linkText: 'Source Code',
+      content: `
+        <div class="modal-metric-box">
+          <i class="fas fa-medal" style="color: #60a5fa;"></i>
+          <strong>Key Impact:</strong> Hackathon Runner-Up &bull; Spain Influenza Pharmaceutical Analytics
+        </div>
+        <div>
+          <div class="modal-section-h">The Challenge</div>
+          <p class="modal-text">Accurately forecasting seasonal influenza medication demand in Spain requires anticipating rapid epidemic wave onsets, varying viral strain virulence, and complex climatic shocks. Standard univariate models fail to anticipate early cross-border signals or sudden cold snaps.</p>
+        </div>
+        <div>
+          <div class="modal-section-h">Multi-Modal Data Integration</div>
+          <p class="modal-text">Fuses three heterogeneous data streams into a unified feature store:
+            <br>• <strong>Environmental Signals:</strong> Temperature deltas, humidity levels, and meteorological patterns.
+            <br>• <strong>Genomic & Strain Data:</strong> Dominant circulating viral variant classifications and mutation prevalence.
+            <br>• <strong>Cross-Border Transfer Signals:</strong> Early-season pharmaceutical sales and epidemiological curves from benchmark European nations acting as leading indicators for Spain.
+          </p>
+        </div>
+        <div>
+          <div class="modal-section-h">Ensemble Architecture & Foundation Models</div>
+          <p class="modal-text">Developed a stacked ensemble combining:
+            <br>• <strong>XGBoost:</strong> Gradient boosting capturing complex non-linear interactions across weather lags and regional demographic covariates.
+            <br>• <strong>Prophet:</strong> Decomposing structural multi-period seasonality, holiday effects, and overarching macro trends.
+            <br>• <strong>Google's TimesFM:</strong> Explored zero-shot trajectory forecasting using Google's pretrained Time Series Foundation Model (TimesFM).
+          </p>
+        </div>
+        <div>
+          <div class="modal-section-h">Tech Stack</div>
+          <div class="project-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Prophet</span>
+            <span class="tech-tag">Google TimesFM</span>
+            <span class="tech-tag">Time Series Forecasting</span>
+            <span class="tech-tag">Genomic Data</span>
+            <span class="tech-tag">Environmental Analytics</span>
+            <span class="tech-tag">Ensemble ML</span>
           </div>
         </div>
       `

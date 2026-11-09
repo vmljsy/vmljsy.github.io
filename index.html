@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Stylesheet with cache-busting -->
-    <link rel="stylesheet" href="css/styles.css?v=20261109c">
+    <link rel="stylesheet" href="css/styles.css?v=20261109d">
 </head>
 <body>
 
@@ -99,7 +99,7 @@
                     <div class="hero-badge-row">
                         <span class="badge badge-glow">
                             <span class="status-dot-pulse"></span>
-                            Data Scientist at IQVIA &bull; Open for Collaboration
+                            Data Scientist at IQVIA &bull; 2x Ovation Awardee
                         </span>
                     </div>
 
@@ -161,9 +161,9 @@
                         <span class="metric-sub">Automated validation engine for clinical data</span>
                     </div>
                     <div class="metric-card">
-                        <span class="metric-value">100+ hrs</span>
-                        <span class="metric-label">Saved Monthly</span>
-                        <span class="metric-sub">Awarded IQVIA Bronze Award for efficacy gains</span>
+                        <span class="metric-value">2x Award</span>
+                        <span class="metric-label">Ovation Awardee</span>
+                        <span class="metric-sub">Honored for excellence in patient analytics</span>
                     </div>
                     <div class="metric-card">
                         <span class="metric-value">5+</span>
@@ -171,9 +171,9 @@
                         <span class="metric-sub">Patient indication identification with ML & LLMs</span>
                     </div>
                     <div class="metric-card">
-                        <span class="metric-value">1st Place</span>
-                        <span class="metric-label">Hackathon Winner</span>
-                        <span class="metric-sub">Patient Cohort Creator on LRX datasets</span>
+                        <span class="metric-value">2x Podium</span>
+                        <span class="metric-label">Hackathon Honors</span>
+                        <span class="metric-sub">1st Place (Cohort Creator) & Runner-Up (Flu Forecaster)</span>
                     </div>
                 </div>
             </div>
@@ -211,6 +211,9 @@
                                     <strong>Generative AI & Indication Modeling:</strong> Spearheaded Generative AI initiatives and engineered machine learning models for patient indication identification utilizing large longitudinal prescription (LRX) data, enhancing analytics capabilities across 5+ client accounts.
                                 </li>
                                 <li>
+                                    <strong>Predictive Demand & Epidemiological Forecasting:</strong> Architected an ensemble time-series system (XGBoost, Prophet, and Google's TimesFM) to forecast seasonal flu medication sales in Spain, fusing environmental, genomic strain, and cross-country lead indicators (Hackathon Runner-Up).
+                                </li>
+                                <li>
                                     <strong>Patient Analytics & Cohort Profiling:</strong> Analyzed multi-country patient records for source-of-business (SOB), compliance, and retention patterns. Collaborated with project managers and clinicians to combine ML algorithms with domain business logic, delivering insights to 10+ clinical stakeholders.
                                 </li>
                                 <li>
@@ -230,6 +233,9 @@
                                 <span class="tech-tag">PySpark</span>
                                 <span class="tech-tag">Generative AI</span>
                                 <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">Prophet</span>
+                                <span class="tech-tag">Google TimesFM</span>
                                 <span class="tech-tag">LRX Data</span>
                                 <span class="tech-tag">Process Automation</span>
                                 <span class="tech-tag">QC Analytics</span>
@@ -397,7 +403,43 @@
                             </div>
                         </div>
 
-                        <!-- Project 3: Generative AI Indication Identifier -->
+                        <!-- Project 3: Flu Season Drug Sales Forecaster -->
+                        <div class="card project-card" data-category="ml">
+                            <div class="project-preview">
+                                <img src="images/undraw_data-input_whqw.svg" alt="Flu Season Forecaster preview">
+                                <span class="badge badge-default project-badge-top">
+                                    <i class="fas fa-medal"></i> Hackathon Runner-Up
+                                </span>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-name">Flu Season Drug Sales Forecaster</h3>
+                                <p class="project-desc">
+                                    An ensemble multi-modal forecasting architecture to predict seasonal flu medication sales in Spain. Ingests meteorological/environmental data, viral genomic strain classifications, and European cross-border lead indicators using XGBoost, Prophet, and Google's TimesFM foundation model.
+                                </p>
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-chart-line" style="color: #60a5fa;"></i> Hackathon Runner-Up &bull; Spain Flu Analytics
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">XGBoost</span>
+                                    <span class="tech-tag">Prophet</span>
+                                    <span class="tech-tag">Google TimesFM</span>
+                                    <span class="tech-tag">Time Series</span>
+                                    <span class="tech-tag">Genomic Data</span>
+                                    <span class="tech-tag">Ensemble ML</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="btn btn-ghost btn-sm open-modal-btn" data-project="flu-forecaster">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Generative AI Indication Identifier -->
                         <div class="card project-card" data-category="ml">
                             <div class="project-preview">
                                 <img src="images/undraw_artificial-intelligence_43qa.svg" alt="Generative AI Project preview">
@@ -628,7 +670,7 @@
                         <div class="award-icon-box"><i class="fas fa-trophy"></i></div>
                         <div class="award-info">
                             <h3 class="award-title">Hackathon Winner — Patient Cohort Creator</h3>
-                            <span class="award-org">IQVIA Hackathon</span>
+                            <span class="award-org">IQVIA Hackathon &bull; 1st Place</span>
                             <p class="award-desc">Won 1st place for building an automated ML clustering tool operating on LRX data to segment patient trajectories based on indications and clinical attributes.</p>
                         </div>
                     </div>
@@ -636,18 +678,27 @@
                     <div class="award-item">
                         <div class="award-icon-box"><i class="fas fa-medal"></i></div>
                         <div class="award-info">
-                            <h3 class="award-title">Bronze Award for Efficacy & Innovation</h3>
-                            <span class="award-org">IQVIA Corporate Award</span>
-                            <p class="award-desc">Conferred in recognition of measurable productivity gains from the Automated QC Tool and SlideSync automation, saving ~100 hours each month.</p>
+                            <h3 class="award-title">Hackathon Runner-Up — Flu Season Forecaster</h3>
+                            <span class="award-org">IQVIA Hackathon &bull; 2nd Place</span>
+                            <p class="award-desc">Secured Runner-Up for designing an ensemble time-series pipeline (XGBoost, Prophet, TimesFM) combining environmental, genomic strain, and cross-country lead indicators to forecast Spain's flu drug demand.</p>
                         </div>
                     </div>
 
                     <div class="award-item">
                         <div class="award-icon-box"><i class="fas fa-star"></i></div>
                         <div class="award-info">
-                            <h3 class="award-title">Ovation Award</h3>
-                            <span class="award-org">IQVIA Patient Analytics</span>
-                            <p class="award-desc">Awarded for outstanding contributions, data integrity, and high-impact modeling delivered on real-world patient analytics projects.</p>
+                            <h3 class="award-title">2x Ovation Award</h3>
+                            <span class="award-org">IQVIA Patient Analytics &bull; Dual Recipient</span>
+                            <p class="award-desc">Awarded twice for exceptional contributions, predictive modeling accuracy, and high-impact analytics delivered on mission-critical patient healthcare deliverables.</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon-box"><i class="fas fa-award"></i></div>
+                        <div class="award-info">
+                            <h3 class="award-title">Bronze Award for Efficacy & Innovation</h3>
+                            <span class="award-org">IQVIA Corporate Award</span>
+                            <p class="award-desc">Conferred in recognition of measurable productivity gains from the Automated QC Tool and SlideSync automation, saving ~100 hours each month.</p>
                         </div>
                     </div>
 
@@ -809,10 +860,14 @@
                     <span class="cmd-kbd">Theme</span>
                 </div>
 
-                <div class="command-group-heading">Featured Apps & Profiles</div>
+                <div class="command-group-heading">Featured Projects & Profiles</div>
                 <div class="command-item" data-action="link" data-url="https://vmljsy.github.io/ds-playground/">
                     <div class="command-item-left"><i class="fas fa-flask"></i> <span>Data Science Playground (Live App)</span></div>
                     <span class="cmd-kbd">Live</span>
+                </div>
+                <div class="command-item" data-action="modal" data-modal="flu-forecaster">
+                    <div class="command-item-left"><i class="fas fa-chart-line"></i> <span>Flu Season Forecaster (Spain)</span></div>
+                    <span class="cmd-kbd">ML</span>
                 </div>
                 <div class="command-item" data-action="link" data-url="https://www.linkedin.com/in/vimaljoshy/">
                     <div class="command-item-left"><i class="fab fa-linkedin"></i> <span>LinkedIn Profile</span></div>
@@ -855,6 +910,6 @@
     </div>
 
     <!-- Scripts with cache-busting -->
-    <script src="js/script.js?v=20261109c"></script>
+    <script src="js/script.js?v=20261109d"></script>
 </body>
 </html>
