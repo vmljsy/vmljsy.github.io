@@ -1,174 +1,794 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vimal Joshy | Data Analyst</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Vimal Joshy | Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio of Vimal Joshy — Data Scientist at IQVIA specializing in healthcare analytics, machine learning, and Generative AI automation. Graduate of NIT Calicut.">
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vmljsy.github.io/">
+    <meta property="og:title" content="Vimal Joshy | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Data Scientist at IQVIA specializing in healthcare analytics, machine learning, and Generative AI automation. NIT Calicut Alum.">
+    <meta property="og:image" content="images/Profile_photo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vimal Joshy | Data Scientist & ML Engineer">
+    <meta name="twitter:description" content="Data Scientist at IQVIA specializing in healthcare analytics, machine learning, and Generative AI automation.">
+    <meta name="twitter:image" content="images/Profile_photo.jpg">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts: Inter & JetBrains Mono for authentic shadcn aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- simplified layout: removed animated cursor -->
 
-    <div class="container">
-        <header>
-            <div class="logo">
-                <a href="#">VJ</a>
-            </div>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" aria-label="Vimal Joshy Home">
+                <span class="brand-badge">VJ</span>
+                <span>vmljsy</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#awards" class="nav-link">Awards</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
-                <button id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
-                    <i class="fas fa-moon"></i>
+
+            <div class="nav-actions">
+                <button id="cmd-k-btn" class="command-trigger-btn" aria-label="Open Command Menu" title="Search (⌘K / Ctrl+K)">
+                    <i class="fas fa-search"></i>
+                    <span style="font-size:0.8rem;">Search</span>
+                    <kbd class="cmd-kbd">⌘K</kbd>
                 </button>
-        </header>
-
-        <main>
-            <section id="hero">
-                <div class="hero-content">
-                    <h1>Vimal Joshy</h1>
-                    <h2>Data Science | Innovator | Engineer</h2>
-                </div>
-                <hr class="section-accent">
-            </section>
-
-            <section id="about">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About / Resume</h2>
-                        <p><strong>Summary:</strong> Production Engineering graduate and Data Scientist at IQVIA focused on patient analytics. Experienced building data products, automation tools, and ML models to drive decision-making and operational efficiency.</p>
-                        <p><strong>Key Skills:</strong> Python, pandas, NumPy, scikit-learn, SQL, data engineering, model evaluation, data visualization (Matplotlib/Seaborn), Git, automation.</p>
-                        <p><strong>Work Highlights:</strong></p>
-                        <ul>
-                            <li>Developed a Patient Cohort Creator (hackathon winner) for clustering patients using LRX data and ML approaches.</li>
-                            <li>Built automation tools including a QC tool that reduced QC time by 95% (~100 hours saved monthly) and <em>SlideSync</em> which cut slide creation time by ~80%.</li>
-                            <li>Spearheaded generative AI initiatives, creating models to identify patient indications and support analytics for multiple client projects.</li>
-                        </ul>
-                        <p><strong>Education:</strong> B.Tech / Production Engineering (details available on request)</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2><i class="fas fa-tools"></i> Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">Python</div>
-                    <div class="skill-card">pandas</div>
-                    <div class="skill-card">NumPy</div>
-                    <div class="skill-card">scikit-learn</div>
-                    <div class="skill-card">SQL</div>
-                    <div class="skill-card">Data Visualization</div>
-                    <div class="skill-card">Machine Learning</div>
-                    <div class="skill-card">Automation</div>
-                    <div class="skill-card">Git</div>
-                    <div class="skill-card">Docker</div>
-                    <div class="skill-card">Jupyter</div>
-                </div>
-            </section>
-
-            <section id="projects">
-                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/undraw_data-processing_z2q6.svg" alt="Project Image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Patient Cohort Creator</h3>
-                        <p>A Python-based tool that works on LRX data to cluster patients based on multiple attributes, even external inputs (indication) or ML-based clustering algorithms. This project was a Hackathon Winner.</p>
-                        <div class="project-links">
-                            <a href="#">View Project</a>
-                            <a href="#">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/undraw_ai-answers_uxgx.svg" alt="Project Image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Automation Tools</h3>
-                        <p>Developed automation tools, including a QC tool that reduced quality control time by 95% (saving 100 hours monthly) and SlideSync, which cut slide creation time by 80%.</p>
-                        <div class="project-links">
-                            <a href="#">View Project</a>
-                            <a href="#">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/undraw_artificial-intelligence_43qa.svg" alt="Project Image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Generative AI Project</h3>
-                        <p>Spearheaded Generative AI projects and developed a machine learning model for patient indication identification using LRX data, enhancing analytics capabilities for 5+ client projects.</p>
-                        <div class="project-links">
-                            <a href="#">View Project</a>
-                            <a href="#">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <h2><i class="fas fa-briefcase"></i> Experience</h2>
-                <div class="experience-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Data Scientist</h3>
-                            <div class="meta">IQVIA — January 2024 - Present</div>
-                            <p>Working with patient data to gain valuable insights on the medical purchases for various stakeholders. Working on innovation platforms to develop tools and processes to increase efficiency and better insights.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Design Engineer</h3>
-                            <div class="meta">MEDGYOR Pvt Ltd. — Sep 2023 - Dec 2023</div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Engineering Intern</h3>
-                            <div class="meta">MEDGYOR Pvt Ltd. — Mar 2022 - Sep 2023</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="certifications">
-                <h2><i class="fas fa-certificate"></i> Certifications</h2>
-                <div class="certifications-container">
-                    <div class="certification-card">Generative Al: Introduction to Large Language Models</div>
-                    <div class="certification-card">Blockchain and the Internet of Things</div>
-                    <div class="certification-card">Thinking Creatively</div>
-                    <div class="certification-card">Principles of Good Design by Dieter Rams</div>
-                    <div class="certification-card">Artificial Intelligence Foundations: Machine Learning</div>
-                </div>
-            </section>
-
-            <section id="honors-awards">
-                <h2><i class="fas fa-award"></i> Honors & Awards</h2>
-                <div class="awards-container">
-                    <div class="award-card">Best Paper Award in 1st International Conference on Mechanical Engineering</div>
-                    <div class="award-card">Ovation Award</div>
-                    <div class="award-card">Certificate of Participation</div>
-                </div>
-            </section>
-        </main>
-
-        <footer id="contact">
-            <h2><i class="fas fa-envelope"></i> Contact</h2>
-            <p>Get in touch with me</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/vimaljoshy/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/vmljsy" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:vimaljoshy2011@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="GitHub Profile" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vimaljoshy/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="resume.pdf" download="Vimal_Joshy_Resume.pdf" class="btn btn-outline btn-sm" title="Download CV">
+                    <i class="fas fa-arrow-down-to-bracket"></i>
+                    <span>Resume</span>
+                </a>
+                <button id="theme-toggle" class="btn btn-ghost btn-icon" aria-label="Toggle theme" title="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button id="mobile-nav-toggle" class="btn btn-ghost btn-icon mobile-nav-toggle" aria-label="Open mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </footer>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Honors & Awards</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.pdf" download="Vimal_Joshy_Resume.pdf" style="color: hsl(var(--primary)); font-weight: 600;">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="container hero-wrapper">
+                <div class="hero-main">
+                    <div class="hero-badge-row">
+                        <span class="badge badge-glow">
+                            <span class="status-dot-pulse"></span>
+                            Data Scientist at IQVIA &bull; Open for Collaboration
+                        </span>
+                    </div>
+
+                    <h1 class="hero-title">Vimal Joshy</h1>
+                    <p class="hero-subtitle">
+                        Data Scientist &bull; Machine Learning Engineer &bull; <span class="highlight">NIT Calicut Alum</span>
+                    </p>
+
+                    <p class="hero-bio">
+                        Engineering graduate from NIT Calicut and Data Scientist at IQVIA focusing on longitudinal patient data (LRX), machine learning, and Generative AI. Experienced in architecting end-to-end analytics pipelines, automating clinical QC workflows with 95% time savings, and deploying ML models for client-facing healthcare solutions.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span class="hero-meta-item">
+                            <i class="fas fa-location-dot"></i> Bengaluru, India
+                        </span>
+                        <span class="hero-meta-item">
+                            <i class="fas fa-briefcase"></i> IQVIA
+                        </span>
+                        <span class="hero-meta-item">
+                            <i class="fas fa-graduation-cap"></i> B.Tech, Mechanical Engineering (NIT Calicut)
+                        </span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                        <a href="resume.pdf" download="Vimal_Joshy_Resume.pdf" class="btn btn-secondary">
+                            <i class="fas fa-file-arrow-down"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <button class="btn btn-outline copy-email-btn" data-email="vimaljoshy2011@gmail.com" title="Copy email address to clipboard">
+                            <i class="fas fa-copy"></i>
+                            <span>Copy Email</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-container">
+                    <div class="avatar-ring">
+                        <img src="images/Profile_photo.jpg" alt="Vimal Joshy" class="avatar-img">
+                        <div class="avatar-badge" title="Actively engineering data solutions">
+                            <span class="avatar-badge-dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Metrics Ribbon (shadcn card metrics) -->
+        <section class="metrics-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-value">95%</span>
+                        <span class="metric-label">QC Time Slashed</span>
+                        <span class="metric-sub">Automated validation engine for clinical data</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">100+ hrs</span>
+                        <span class="metric-label">Saved Monthly</span>
+                        <span class="metric-sub">Awarded IQVIA Bronze Award for efficacy gains</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">5+</span>
+                        <span class="metric-label">GenAI Client Projects</span>
+                        <span class="metric-sub">Patient indication identification with ML & LLMs</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">1st Place</span>
+                        <span class="metric-label">Hackathon Winner</span>
+                        <span class="metric-sub">Patient Cohort Creator on LRX datasets</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-briefcase"></i> Career Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">Driving quantitative decision-making, deploying machine learning systems, and automating mission-critical analytical workflows.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- IQVIA -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Data Scientist / Data Analyst</h3>
+                                    <div class="timeline-company">
+                                        <span>IQVIA</span>
+                                        <span>&bull;</span>
+                                        <span>Bengaluru, India</span>
+                                        <span class="badge badge-secondary" style="font-size:0.7rem;">Healthcare & Life Sciences</span>
+                                    </div>
+                                </div>
+                                <span class="timeline-date">January 2024 — Present</span>
+                            </div>
+
+                            <ul class="timeline-bullets">
+                                <li>
+                                    <strong>Generative AI & Indication Modeling:</strong> Spearheaded Generative AI initiatives and engineered machine learning models for patient indication identification utilizing large longitudinal prescription (LRX) data, enhancing analytics capabilities across 5+ client accounts.
+                                </li>
+                                <li>
+                                    <strong>Patient Analytics & Cohort Profiling:</strong> Analyzed multi-country patient records for source-of-business (SOB), compliance, and retention patterns. Collaborated with project managers and clinicians to combine ML algorithms with domain business logic, delivering insights to 10+ clinical stakeholders.
+                                </li>
+                                <li>
+                                    <strong>Automated QC Framework (95% Efficiency):</strong> Built custom automation tooling including a data QC pipeline that reduced quality control runtime by 95% (saving ~100 engineering hours monthly), earning the company's Bronze Award for efficacy.
+                                </li>
+                                <li>
+                                    <strong>SlideSync Deck Automation (80% Speedup):</strong> Conceived and developed <em>SlideSync</em>, an automated presentation assembly framework that compressed client deck creation time by 80%.
+                                </li>
+                                <li>
+                                    <strong>Client Delivery & GTM Support:</strong> Managed recurring client projects and partnered with the Go-To-Market team to support Real-World Analytics offerings, maintaining a 100% on-time delivery record.
+                                </li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">PySpark</span>
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">LRX Data</span>
+                                <span class="tech-tag">Process Automation</span>
+                                <span class="tech-tag">QC Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medgyor -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Design Engineer</h3>
+                                    <div class="timeline-company">
+                                        <span>Medgyor Pvt Ltd</span>
+                                        <span>&bull;</span>
+                                        <span>Calicut, India</span>
+                                        <span class="badge badge-secondary" style="font-size:0.7rem;">Hardware & Smart IoT</span>
+                                    </div>
+                                </div>
+                                <span class="timeline-date">March 2022 — December 2023</span>
+                            </div>
+
+                            <ul class="timeline-bullets">
+                                <li>
+                                    Operated in an agile startup environment, wearing multiple hats across market analysis, CAD modeling, and rapid product prototyping.
+                                </li>
+                                <li>
+                                    Took ownership of project leadership for smart display systems (Mosque Prayer Time Display), coordinating pilot deployments for regional institutional clients.
+                                </li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tech-tag">CAD Engineering</span>
+                                <span class="tech-tag">Market Research</span>
+                                <span class="tech-tag">Prototyping</span>
+                                <span class="tech-tag">Client Pilots</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NIT Calicut Leadership -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Leadership & Committee Head</h3>
+                                    <div class="timeline-company">
+                                        <span>National Institute of Technology Calicut (NITC)</span>
+                                    </div>
+                                </div>
+                                <span class="timeline-date">February 2021 — July 2023</span>
+                            </div>
+
+                            <ul class="timeline-bullets">
+                                <li>
+                                    <strong>Head of I-Ink (RAGAM '23):</strong> Led an executive team of 10 to strategize and execute major cultural events at South India's largest cultural fest, achieving a 20% surge in attendee participation.
+                                </li>
+                                <li>
+                                    <strong>Head at Lecture Committee (Tathva NIT Calicut):</strong> Directed the flagship lecture series, personally coordinating and hosting sessions with 2 Nobel Laureates alongside prominent global scientists.
+                                </li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tech-tag">Team Leadership</span>
+                                <span class="tech-tag">Event Operations</span>
+                                <span class="tech-tag">Public Relations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (with shadcn Tabs) -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world analytics tools, machine learning pipelines, and automation solutions developed for healthcare datasets and enterprise workflows.</p>
+                </div>
+
+                <div class="tabs-container">
+                    <!-- Filter Tabs -->
+                    <div class="tabs-list" role="tablist">
+                        <button class="tab-trigger active" data-filter="all" role="tab">All Projects</button>
+                        <button class="tab-trigger" data-filter="ml" role="tab">AI & Machine Learning</button>
+                        <button class="tab-trigger" data-filter="automation" role="tab">Automation & Tools</button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="projects-grid">
+                        <!-- Project 1: Patient Cohort Creator -->
+                        <div class="card project-card" data-category="ml">
+                            <div class="project-preview">
+                                <img src="images/undraw_data-processing_z2q6.svg" alt="Patient Cohort Creator preview">
+                                <span class="badge badge-default project-badge-top">
+                                    <i class="fas fa-trophy"></i> Hackathon Winner
+                                </span>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-name">Patient Cohort Creator</h3>
+                                <p class="project-desc">
+                                    A Python-based clustering and segmentation engine designed for large longitudinal patient (LRX) datasets. Groups patients based on multi-dimensional clinical attributes, diagnostic indications, and unsupervised machine learning clustering algorithms.
+                                </p>
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-circle-check" style="color: #22c55e;"></i> Hackathon 1st Place &bull; LRX Clustering
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">scikit-learn</span>
+                                    <span class="tech-tag">pandas</span>
+                                    <span class="tech-tag">Unsupervised ML</span>
+                                    <span class="tech-tag">Healthcare Data</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Generative AI Indication Identifier -->
+                        <div class="card project-card" data-category="ml">
+                            <div class="project-preview">
+                                <img src="images/undraw_artificial-intelligence_43qa.svg" alt="Generative AI Project preview">
+                                <span class="badge badge-secondary project-badge-top">
+                                    <i class="fas fa-brain"></i> Enterprise AI
+                                </span>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-name">GenAI Indication Identifier</h3>
+                                <p class="project-desc">
+                                    Machine learning and Generative AI pipeline engineered at IQVIA to identify and classify disease indications from complex prescription journeys. Scaled to empower real-world analytics for 5+ major client accounts.
+                                </p>
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-chart-pie" style="color: #60a5fa;"></i> 5+ Enterprise Client Deployments
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Generative AI</span>
+                                    <span class="tech-tag">LLMs</span>
+                                    <span class="tech-tag">NLP</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">LRX Data</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: QC Automation Engine -->
+                        <div class="card project-card" data-category="automation">
+                            <div class="project-preview">
+                                <img src="images/undraw_data-analysis_b7cp.svg" alt="QC Tool preview">
+                                <span class="badge badge-default project-badge-top">
+                                    <i class="fas fa-medal"></i> Bronze Award
+                                </span>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-name">Automated Clinical QC Engine</h3>
+                                <p class="project-desc">
+                                    Automated quality control and anomaly-detection engine for high-volume patient data tables. Validates data schemas, edge cases, and clinical anomalies, cutting manual QC turnaround time by 95% and saving 100 hours each month.
+                                </p>
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-clock" style="color: #f59e0b;"></i> -95% QC Time &bull; 100h / Month Saved
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Data Quality</span>
+                                    <span class="tech-tag">Anomaly Detection</span>
+                                    <span class="tech-tag">pandas</span>
+                                    <span class="tech-tag">Automation</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: SlideSync Automation -->
+                        <div class="card project-card" data-category="automation">
+                            <div class="project-preview">
+                                <img src="images/undraw_ai-answers_uxgx.svg" alt="SlideSync preview">
+                                <span class="badge badge-secondary project-badge-top">
+                                    <i class="fas fa-bolt"></i> Productivity Tool
+                                </span>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-name">SlideSync Deck Generator</h3>
+                                <p class="project-desc">
+                                    Programmatic reporting automation tool that maps analytical dataframes and dynamic visualizations directly into formatted PowerPoint presentations, reducing deck assembly turnaround by 80%.
+                                </p>
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-bolt" style="color: #22c55e;"></i> 80% Deck Assembly Time Cut
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Deck Automation</span>
+                                    <span class="tech-tag">Data Visualization</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                    <span class="tech-tag">ETL</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <a href="#contact" class="btn btn-ghost btn-sm">
+                                    <i class="fas fa-circle-info"></i> Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (shadcn Categorized Cards) -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-screwdriver-wrench"></i> Technical Arsenal</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Proficiencies developed through enterprise production analytics, hackathon implementations, and academic engineering.</p>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- Machine Learning & AI -->
+                    <div class="skill-cat-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+                            <h3 class="skill-cat-title">Data Science & Machine Learning</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fas fa-check"></i> scikit-learn</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Generative AI & LLMs</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Patient Clustering</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Statistical Modeling</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Natural Language Processing</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Model Evaluation & Metrics</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> LRX Patient Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Querying -->
+                    <div class="skill-cat-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                            <h3 class="skill-cat-title">Programming & Databases</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fab fa-python"></i> Python (Expert)</span>
+                            <span class="skill-chip"><i class="fas fa-database"></i> SQL (Complex Joins & Aggregations)</span>
+                            <span class="skill-chip"><i class="fas fa-fire"></i> PySpark</span>
+                            <span class="skill-chip"><i class="fas fa-terminal"></i> Bash / Shell Scripting</span>
+                            <span class="skill-chip"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering & Analytics -->
+                    <div class="skill-cat-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="skill-cat-title">Data Engineering & Analytics</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fas fa-check"></i> pandas & NumPy</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Automated QC & Testing</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Data Pipelines & ETL</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Anomaly Detection</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Matplotlib & Seaborn</span>
+                            <span class="skill-chip"><i class="fas fa-check"></i> Advanced Excel & Office Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools & Practices -->
+                    <div class="skill-cat-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon"><i class="fas fa-toolbox"></i></div>
+                            <h3 class="skill-cat-title">Tools, Platforms & Workflow</h3>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                            <span class="skill-chip"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="skill-chip"><i class="fas fa-book-open"></i> Jupyter Lab / Notebooks</span>
+                            <span class="skill-chip"><i class="fas fa-users-gear"></i> Agile / Scrum Methodologies</span>
+                            <span class="skill-chip"><i class="fas fa-handshake"></i> Cross-Functional Leadership</span>
+                            <span class="skill-chip"><i class="fas fa-microchip"></i> CAD Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Leadership Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Background</span>
+                    <h2 class="section-title">Education & Campus Leadership</h2>
+                    <p class="section-subtitle">Rigorous analytical training combined with large-scale campus organizational leadership.</p>
+                </div>
+
+                <div class="two-col-grid">
+                    <div class="edu-card">
+                        <span class="badge badge-secondary" style="width:fit-content;">Undergraduate Degree</span>
+                        <h3 class="edu-institution">National Institute of Technology Calicut (NIT Calicut)</h3>
+                        <p class="edu-degree">Bachelor of Technology (B.Tech) in Mechanical Engineering</p>
+                        <span class="edu-year"><i class="fas fa-calendar"></i> 2019 — 2023 &bull; Calicut, India</span>
+                        <p style="font-size:0.875rem; color:hsl(var(--muted-foreground)); line-height:1.5;">
+                            Rigorous foundation in mathematics, statistical mechanics, computational modeling, and quantitative problem-solving.
+                        </p>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="badge badge-secondary" style="width:fit-content;">Campus Leadership</span>
+                        <h3 class="edu-institution">Executive Leadership at NIT Calicut</h3>
+                        <p class="edu-degree">Head of I-Ink (Ragam) &bull; Head of Lecture Committee (Tathva)</p>
+                        <span class="edu-year"><i class="fas fa-calendar"></i> 2021 — 2023</span>
+                        <p style="font-size:0.875rem; color:hsl(var(--muted-foreground)); line-height:1.5;">
+                            Successfully managed multi-tier student teams, invited 2 Nobel laureates to campus, and spearheaded major technical and cultural festivals with 20% attendance growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors & Awards Section -->
+        <section id="awards" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-award"></i> Recognition</span>
+                    <h2 class="section-title">Honors & Awards</h2>
+                    <p class="section-subtitle">Recognized for innovation in healthcare analytics, operational optimization, and academic contributions.</p>
+                </div>
+
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <div class="award-icon-box"><i class="fas fa-trophy"></i></div>
+                        <div class="award-info">
+                            <h3 class="award-title">Hackathon Winner — Patient Cohort Creator</h3>
+                            <span class="award-org">IQVIA Hackathon</span>
+                            <p class="award-desc">Won 1st place for building an automated ML clustering tool operating on LRX data to segment patient trajectories based on indications and clinical attributes.</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon-box"><i class="fas fa-medal"></i></div>
+                        <div class="award-info">
+                            <h3 class="award-title">Bronze Award for Efficacy & Innovation</h3>
+                            <span class="award-org">IQVIA Corporate Award</span>
+                            <p class="award-desc">Conferred in recognition of measurable productivity gains from the Automated QC Tool and SlideSync automation, saving ~100 hours each month.</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon-box"><i class="fas fa-star"></i></div>
+                        <div class="award-info">
+                            <h3 class="award-title">Ovation Award</h3>
+                            <span class="award-org">IQVIA Patient Analytics</span>
+                            <p class="award-desc">Awarded for outstanding contributions, data integrity, and high-impact modeling delivered on real-world patient analytics projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon-box"><i class="fas fa-scroll"></i></div>
+                        <div class="award-info">
+                            <h3 class="award-title">Best Paper Award</h3>
+                            <span class="award-org">1st International Conference on Mechanical Engineering (ICME)</span>
+                            <p class="award-desc">Recognized for highest caliber research and paper presentation among international university and industry submissions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications subsection -->
+                <div style="margin-top: 2.75rem;">
+                    <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; color: hsl(var(--foreground));">
+                        <i class="fas fa-certificate" style="margin-right: 0.5rem; color: hsl(var(--muted-foreground));"></i>
+                        Professional Certifications
+                    </h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Generative AI: Introduction to Large Language Models</span>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Artificial Intelligence Foundations: Machine Learning</span>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Blockchain and the Internet of Things</span>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Principles of Good Design by Dieter Rams</span>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thinking Creatively & Systems Thinking</span>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificate of Participation & Technical Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card">
+                    <span class="badge badge-outline">Let's Connect</span>
+                    <h2 class="contact-title">Interested in working together?</h2>
+                    <p class="contact-desc">
+                        Whether you want to discuss a data science opportunity, machine learning project, automation pipeline, or just say hello — my inbox is always open.
+                    </p>
+
+                    <div class="contact-actions">
+                        <a href="mailto:vimaljoshy2011@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send an Email</span>
+                        </a>
+                        <button class="btn btn-outline copy-email-btn" data-email="vimaljoshy2011@gmail.com">
+                            <i class="fas fa-copy"></i>
+                            <span>Copy vimaljoshy2011@gmail.com</span>
+                        </button>
+                        <a href="resume.pdf" download="Vimal_Joshy_Resume.pdf" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            <span>Get Resume (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/vimaljoshy/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/vmljsy" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:vimaljoshy2011@gmail.com" class="social-circle-btn" aria-label="Email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <p>&copy; 2026 Vimal Joshy. Built with clean shadcn/ui aesthetic.</p>
+            </div>
+            <div class="footer-meta">
+                <span>Bengaluru, India</span>
+                <span>&bull;</span>
+                <a href="#about" class="nav-link" style="padding:0;">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification (shadcn style) -->
+    <div class="toast-container">
+        <div id="toast" class="toast">
+            <i class="fas fa-circle-check"></i>
+            <span id="toast-message">Email copied to clipboard!</span>
+        </div>
     </div>
 
+    <!-- Command Palette Dialog (shadcn cmdk) -->
+    <div id="cmd-dialog-overlay" class="command-dialog-overlay" role="dialog" aria-modal="true" aria-label="Command Menu">
+        <div class="command-dialog">
+            <div class="command-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="cmd-input" class="command-input" placeholder="Type a command or search sections..." autocomplete="off">
+                <kbd class="cmd-kbd">ESC</kbd>
+            </div>
+            <div id="cmd-list" class="command-list">
+                <div class="command-group-heading">Navigation</div>
+                <div class="command-item" data-action="navigate" data-target="#about">
+                    <div class="command-item-left"><i class="fas fa-user"></i> <span>About & Summary</span></div>
+                    <span class="cmd-kbd">#about</span>
+                </div>
+                <div class="command-item" data-action="navigate" data-target="#experience">
+                    <div class="command-item-left"><i class="fas fa-briefcase"></i> <span>Experience (IQVIA)</span></div>
+                    <span class="cmd-kbd">#experience</span>
+                </div>
+                <div class="command-item" data-action="navigate" data-target="#projects">
+                    <div class="command-item-left"><i class="fas fa-folder-open"></i> <span>Featured Projects</span></div>
+                    <span class="cmd-kbd">#projects</span>
+                </div>
+                <div class="command-item" data-action="navigate" data-target="#skills">
+                    <div class="command-item-left"><i class="fas fa-screwdriver-wrench"></i> <span>Skills & Technologies</span></div>
+                    <span class="cmd-kbd">#skills</span>
+                </div>
+                <div class="command-item" data-action="navigate" data-target="#awards">
+                    <div class="command-item-left"><i class="fas fa-award"></i> <span>Honors & Certifications</span></div>
+                    <span class="cmd-kbd">#awards</span>
+                </div>
+                <div class="command-item" data-action="navigate" data-target="#contact">
+                    <div class="command-item-left"><i class="fas fa-envelope"></i> <span>Contact Information</span></div>
+                    <span class="cmd-kbd">#contact</span>
+                </div>
+
+                <div class="command-group-heading">Actions</div>
+                <div class="command-item" data-action="resume">
+                    <div class="command-item-left"><i class="fas fa-file-arrow-down"></i> <span>Download Resume (PDF)</span></div>
+                    <span class="cmd-kbd">PDF</span>
+                </div>
+                <div class="command-item" data-action="copy-email">
+                    <div class="command-item-left"><i class="fas fa-copy"></i> <span>Copy Email Address</span></div>
+                    <span class="cmd-kbd">@</span>
+                </div>
+                <div class="command-item" data-action="toggle-theme">
+                    <div class="command-item-left"><i class="fas fa-circle-half-stroke"></i> <span>Toggle Dark / Light Theme</span></div>
+                    <span class="cmd-kbd">Theme</span>
+                </div>
+
+                <div class="command-group-heading">External Profiles</div>
+                <div class="command-item" data-action="link" data-url="https://www.linkedin.com/in/vimaljoshy/">
+                    <div class="command-item-left"><i class="fab fa-linkedin"></i> <span>LinkedIn Profile</span></div>
+                    <span class="cmd-kbd"><i class="fas fa-external-link"></i></span>
+                </div>
+                <div class="command-item" data-action="link" data-url="https://github.com/vmljsy">
+                    <div class="command-item-left"><i class="fab fa-github"></i> <span>GitHub Profile</span></div>
+                    <span class="cmd-kbd"><i class="fas fa-external-link"></i></span>
+                </div>
+            </div>
+            <div class="command-footer">
+                <span>Navigate: <kbd class="cmd-kbd">↑</kbd> <kbd class="cmd-kbd">↓</kbd></span>
+                <span>Select: <kbd class="cmd-kbd">Enter</kbd></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
